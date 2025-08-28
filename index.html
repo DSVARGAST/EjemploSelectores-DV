@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Selectores CSS</title>
+  <style>
+    /* --- Selectores de atributos --- */
+    a[target="_blank"] {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* --- Pseudoclases --- */
+    a:hover {
+      color: black;
+    }
+
+    p:first-child {
+      background-color: #f0f0f0;
+    }
+
+    /* --- Pseudoelementos --- */
+    p::first-letter {
+      font-size: 1.5em;
+      color: blue;
+    }
+
+    p::after {
+      content: " ✨";
+      color: orange;
+    }
+
+    /* --- Combinadores --- */
+    div > p {
+      border: 1px solid gray;
+      padding: 5px;
+    }
+
+    ul li + li {
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+  <h1>David Santiago Vargas Tapias CSS</h1>
+
+  <p>Universidad San Buenaventura.</p>
+  <p>Tecnologia Desarrollo De Software</p>
+
+  <a href="https://www.google.com" target="_blank">Enlace con target="_blank"</a>
+  <a href="https://www.openai.com">Enlace normal</a>
+
+  <div>
+    <p>Ejemplo Selectores...</p>
+  </div>
+
+  <ul>
+    <li>elemente 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+  </ul>
+</body>
+</html>

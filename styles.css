@@ -1,0 +1,59 @@
+/* Selección por tipo de elemento */
+h1 {
+  color: #2c3e50;
+  font-size: 2em;
+}
+
+/* Selección por clase */
+.producto {
+  font-weight: bold;
+}
+
+/* Selección por ID */
+#comentarios {
+  font-style: italic;
+}
+
+/* Selección por atributo */
+.producto[data-categoria="nuevo"] {
+  color: green;
+}
+
+.producto[data-categoria="oferta"] {
+  color: red;
+}
+
+/* Pseudoclase :hover */
+.producto:hover {
+  text-decoration: underline;
+}
+
+/* Pseudoclase :first-child */
+.productos ul li:first-child {
+  background-color: #f0f0f0;
+}
+
+/* Pseudoclase :nth-child */
+.productos ul li:nth-child(odd) {
+  background-color: #ecf0f1;
+}
+
+/* Pseudoelemento ::before */
+h1::before {
+  content: "🛍️ ";
+}
+
+/* Combinador hijo directo > */
+.productos > ul {
+  padding-left: 20px;
+}
+
+/* Combinador hermano adyacente + */
+.producto + .producto {
+  margin-top: 10px;
+}
+
+/* Combinador hermano general ~ */
+.producto ~ .comentario {
+  color: #7f8c8d;
+}
